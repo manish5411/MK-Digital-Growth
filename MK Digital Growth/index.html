@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MK Digital Growth — Delhi</title>
+  <meta name="description" content="MK Digital Growth — Premium web design & digital marketing for Delhi NCR businesses. Responsive websites, SEO, PPC, branding." />
+  <link rel="icon" href="images/LOGObg.png" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Hide steps by default */
+    #reviewStep, #thankyouStep { display: none; }
+
+    .step-section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .step-section h2 { font-size: 28px; margin-bottom: 15px; }
+    .step-section p { margin-bottom: 20px; }
+
+    .step-form textarea,
+    .step-form input {
+      width: 100%;
+      max-width: 500px;
+      padding: 12px;
+      margin: 10px auto;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      display: block;
+    }
+
+    .step-form button {
+      background: #0077cc;
+      color: #fff;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .step-form button:hover { background: #005fa3; }
+
+    .thankyou-msg h1 { font-size: 40px; color: #0077cc; margin-bottom: 15px; }
+
+    /* Footer */
+    .site-footer {
+      background:#222; 
+      color:#fff; 
+      padding:40px 20px; 
+      margin-top:50px;
+    }
+    .footer-inner {
+      max-width:1100px;
+      margin:auto;
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap:30px;
+    }
+    .footer-inner h3 { margin-bottom:10px; color:#00aaff; }
+    .footer-inner p { margin:5px 0; font-size:15px; }
+    iframe { width:100%; height:200px; border:0; border-radius:8px; }
+    .footer-bottom {
+      text-align:center; 
+      margin-top:20px; 
+      font-size:14px; 
+      color:#aaa;
+    }
+  </style>
+</head>
+<body>
+  <!-- NAV -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#hero" aria-label="MK Digital Growth home">
+        <img src="images/logo1.png" alt="MK Digital Growth logo" class="brand-logo" height="90"/>
+        <div class="brand-text">
+          <strong>MK Digital Growth</strong>
+          <small>Since 2020 • New Delhi</small>
+        </div>
+      </a>
+
+      <button id="hamburger" class="hamburger" aria-expanded="false" aria-label="Toggle menu">☰</button>
+
+      <nav id="site-nav" class="nav" aria-label="Main navigation">
+  <a href="#hero">Home</a>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#projects">Projects</a>
+  <a href="#reviewStep">Reviews</a> <!-- yaha change -->
+  <a href="#contactStep">Contact</a> <!-- yaha bhi contactStep karo -->
+</nav>
+
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="hero-inner container">
+      <h1 class="hero-title">We Build Websites That Grow Your Business</h1>
+      <p class="hero-sub">Premium web design & digital growth solutions — Serving businesses in <strong>Delhi NCR</strong>.</p>
+      <div class="hero-cta">
+        <a href="#contactStep" class="btn primary">Get Started</a>
+        <a href="#projects" class="btn ghost">See Our Work</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about">
+    <div class="container about-inner">
+      <div class="about-text">
+        <h2>About MK Digital Growth</h2>
+        <p><span class="highlight"><strong>MK Digital Growth</strong></span> creates modern, responsive websites and data-driven digital marketing that help small &amp; medium businesses grow. Founded in 2020 in New Delhi, we combine design, performance and transparency to deliver measurable results.</p>
+        <ul class="about-features">
+          <li><strong>Responsive Websites</strong> — Mobile-first &amp; SEO-ready.</li>
+          <li><strong>Performance Marketing</strong> — Paid ads + organic growth.</li>
+          <li><strong>Clear Process</strong> — Timelines, reports &amp; friendly support.</li>
+        </ul>
+        <p class="muted"><strong>Note:</strong> Our services are currently available only in <strong>Delhi NCR</strong>.</p>
+        <a class="btn outline" href="#contactStep">Get a Free Quote</a>
+      </div>
+      <div class="about-media">
+        <img src="images/ADG.avif" alt="Team working at MK Digital Growth" />
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section services">
+    <div class="container">
+      <h2>Our Services (Delhi NCR Only)</h2>
+      <div class="cards services-grid">
+        <article class="card"><div class="card-icon">💻</div><h3>Website Development</h3><p>Fast, secure, responsive websites built to convert visitors into customers.</p></article>
+        <article class="card"><div class="card-icon">📈</div><h3>SEO & Local SEO</h3><p>Rank for Delhi-specific searches and attract relevant local customers.</p></article>
+        <article class="card"><div class="card-icon">🎯</div><h3>Performance Marketing</h3><p>Paid campaigns (Google / Social) with data-driven optimisation.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2>Our Projects</h2>
+      <div class="work-gallery">
+        <a class="work-item" href="https://premium-kitchen-emqi.vercel.app/" target="_blank"><img src="images/foodwebapp.png" alt="Premium Kitchen project" /><p>Premium Kitchen — Restaurant Web App</p></a>
+        <a class="work-item" href="images/landingpage.png" target="_blank"><img src="images/landingpage.png" alt="E-commerce project" /><p>E-Commerce landingpage</p></a>
+        <a class="work-item" href="#"><img src="images/SEO1.jpeg" alt="Portfolio project" /><p>SEO Project</p></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STEP 1: CONTACT -->
+  <section id="contactStep" class="step-section">
+    <h2>Contact Us</h2>
+    <p class="muted">We help Delhi businesses grow online — reach out for a free chat.</p>
+    <form id="contactForm" class="step-form">
+      <input type="text" name="name" placeholder="Your name" required />
+      <input type="email" name="email" placeholder="Your email" required />
+      <textarea name="message" rows="5" placeholder="How can we help?" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- STEP 2: REVIEW -->
+  <section id="reviewStep" class="step-section">
+    <h2>⭐ Share Your Experience</h2>
+    <p>Please leave your review below:</p>
+    <form id="reviewForm" class="step-form">
+      <textarea placeholder="Write your review..." required></textarea>
+      <input type="text" placeholder="Your Name" required>
+      <button type="submit">Submit Review</button>
+    </form>
+  </section>
+
+  <!-- STEP 3: THANK YOU -->
+  <section id="thankyouStep" class="step-section thankyou-msg">
+    <h1>🎉 Thank You!</h1>
+    <p>Your review has been submitted successfully.</p>
+    <a href="#hero" class="btn primary">Back to Home</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <h3>📍 Address</h3>
+        <p>G-162, Lal Kuan, Badarpur,<br> New Delhi - 110044</p>
+      </div>
+      <div>
+        <h3>📞 Contact</h3>
+        <p><strong>Phone:</strong> +91 96505 28171</p>
+        <p><strong>Email:</strong> kumarmanish322251@gmail.com</p>
+      </div>
+      <div>
+        <h3>🗺️ Find Us</h3>
+        <iframe 
+          src="https://www.google.com/maps?q=G-162,+Lal+Kuan,+Badarpur,+New+Delhi&output=embed"
+          loading="lazy" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 MK Digital Growth — Services Available in Delhi NCR
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('site-nav');
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+
+    // Multi-step form flow
+    const contactForm = document.getElementById('contactForm');
+    const reviewForm = document.getElementById('reviewForm');
+    const contactStep = document.getElementById('contactStep');
+    const reviewStep = document.getElementById('reviewStep');
+    const thankyouStep = document.getElementById('thankyouStep');
+
+    if (contactForm) {
+      contactForm.addEventListener('submit', e => {
+        e.preventDefault();
+        contactStep.style.display = "none";
+        reviewStep.style.display = "block";
+        window.scrollTo({ top: reviewStep.offsetTop, behavior: 'smooth' });
+      });
+    }
+
+    if (reviewForm) {
+      reviewForm.addEventListener('submit', e => {
+        e.preventDefault();
+        reviewStep.style.display = "none";
+        thankyouStep.style.display = "block";
+        window.scrollTo({ top: thankyouStep.offsetTop, behavior: 'smooth' });
+      });
+    }
+  </script>
+</body>
+</html>
